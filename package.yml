@@ -1,6 +1,6 @@
 name       : python-configparser
 version    : 3.5.0
-release    : 1
+release    : 2
 source     :
     - https://pypi.python.org/packages/7c/69/c2ce7e91c89dc073eb1aa74c0621c3eefbffe8216b3f9af9d3885265c01c/configparser-3.5.0.tar.gz : 5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a
 license    : MIT
