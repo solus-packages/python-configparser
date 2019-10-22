@@ -1,8 +1,8 @@
 name       : python-configparser
-version    : 3.5.0
-release    : 2
+version    : 4.0.2
+release    : 3
 source     :
-    - https://pypi.python.org/packages/7c/69/c2ce7e91c89dc073eb1aa74c0621c3eefbffe8216b3f9af9d3885265c01c/configparser-3.5.0.tar.gz : 5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a
+    - https://files.pythonhosted.org/packages/16/4f/48975536bd488d3a272549eb795ac4a13a5f7fcdc8995def77fbef3532ee/configparser-4.0.2.tar.gz : c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df
 license    : MIT
 component  : programming.python
 summary    : This library brings the updated configparser from Python 3.5 to Python 2.6-3.5.
@@ -10,6 +10,7 @@ description: |
     This library brings the updated configparser from Python 3.5 to Python 2.6-3.5.
 builddeps  :
     - python-setuptools
+    - python-setuptools-scm
 build      : |
     %python_setup
 install    : |
