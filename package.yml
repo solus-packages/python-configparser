@@ -1,6 +1,6 @@
 name       : python-configparser
 version    : 4.0.2
-release    : 3
+release    : 4
 source     :
     - https://files.pythonhosted.org/packages/16/4f/48975536bd488d3a272549eb795ac4a13a5f7fcdc8995def77fbef3532ee/configparser-4.0.2.tar.gz : c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df
 license    : MIT
@@ -11,7 +11,11 @@ description: |
 builddeps  :
     - python-setuptools
     - python-setuptools-scm
+rundeps    :
+    - python-backports
 build      : |
     %python_setup
 install    : |
     %python_install
+    # Provided by backports
+    rm $installdir/usr/lib/python2.7/site-packages/backports/__init__.py{,c}
